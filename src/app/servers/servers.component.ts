@@ -2,10 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-servers',
-  // template: `
-  //   <app-server></app-server>
-  //   <app-server></app-server>
-  // `,
   templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css']
 })
@@ -16,7 +12,7 @@ export class ServersComponent implements OnInit {
   serverName = 'Test server';
   userName = '';
   serverCreated = false;
-  servers = ['Test server 1', 'Test server 2']
+  servers = ['Test server 1', 'Test server 2'];
 
   constructor() {
     setTimeout(() => {
@@ -36,9 +32,4 @@ export class ServersComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  onEmptyUserField() {
-    this.userName = '';
-  }
-
 }

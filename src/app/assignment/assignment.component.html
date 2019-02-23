@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click) = changeDisplayStatus()>Display Details</button>
+<p *ngIf = "displayStatus">Secret password = tuna</p>
+<div *ngFor = "let historyItem of historyArray"
+  [ngStyle] = "{ backgroundColor: historyItem > 5 ? 'blue' : 'transparent' }"
+  [ngClass] = "{ online:  historyItem > 5}"
+>
+  {{ historyItem }}
+</div>
